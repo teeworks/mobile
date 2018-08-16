@@ -1,0 +1,110 @@
+/*----------------------------
+BIG TABLETS 1024-1200PX
+---------------------------*/
+
+@media only screen and (max-width:1200px){
+.hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+}
+    .row { padding: 0 2%; }
+
+.bank {
+    list-style: none;
+    float: right;
+    margin-right: 420px;
+    margin-left: 450px;
+}
+section {
+    margin-top: 15px;
+}
+    .flood {
+    margin-left: 440px;
+}
+    .autobile {
+     height: 63vh;   
+}
+}
+
+/*----------------------------
+SMALL TABLETS- BIG TABLETS 768-1023PX
+---------------------------*/
+
+@media only screen and (max-width:1023px){
+    body { font-size: 18px;}
+    section { padding: 60px 0; }
+
+   
+    .contact-form { width: 90%; }
+  .flood {
+    margin-left: 300px;
+}
+
+}
+
+
+
+/*----------------------------
+SMALL PHONES- TABLETS 481-767PX
+---------------------------*/
+
+@media only screen and (max-width:767px) {
+    body { font-size: 16px; }
+    section { padding: 30px 0; }
+    
+    .row { padding: 0 4%; }
+    
+    .col { width: 100%; 
+    margin: 0 0 4% 0;
+    }
+    
+    
+    .h1 { font-size: 180%;}
+    .h2 { font-size: 150%;}
+    
+.map {
+    width: 100%;
+    height: 300px;
+        z-index: 0;
+    position: relative;
+}
+
+.mapbox {
+ width: 100%;
+    height: auto;
+    position: relative;
+}
+.formbox {
+    position: relative;
+       height: auto;
+    padding: 30px 0;
+    width: 100%;
+    
+}
+ .flood {
+    margin-left: 160px;
+}
+    
+}
+
+
+
+/*----------------------------
+SMALL PHONES 0-480PX
+---------------------------*/
+
+@media only screen and (max-width:480px){
+    section { padding: 25px 0; }
+    .contactform { width: 100%; }
+    .bank {
+    list-style: none;
+    float: right;
+    margin-right: 60px;
+}
+.autobile {
+     height: 60vh;   
+}
+     .flood {
+    margin-left: 60px;
+}
+}

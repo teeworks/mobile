@@ -1,0 +1,350 @@
+
+/*----------------------------*/
+/*BASIC SETUP */
+/*---------------------------*/
+* {
+margin: 0;
+padding: 0;
+line-height: 1.6;
+-webkit-box-sizing: border-box;
+box-sizing: border-box; 
+}    
+
+html,
+body {
+color: #000; 
+ font-family: 'Lato', 'serif';
+font-weight: 300;
+font-size: 20px;
+text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom:1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+ 
+/*----------------------------*/
+/*MaIN NAV*/
+/*---------------------------*/
+.logo {
+    height: 50px;
+    width: auto;
+    float: right;
+    margin-top: 20px;
+}
+
+/*----------------------------*/
+/*HEADINGS */
+/*---------------------------*/
+
+h1, h2, h3 { 
+    font-weight: 15;
+    text-transform: uppercase;
+}
+h1 {
+     margin-top: 0em;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 240%;
+     word-spacing: 4px;
+    letter-spacing: 1px;
+}
+h2  {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin: 20px;
+    letter-spacing: 1px;
+}
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+ display: block;
+    height: 2px;
+    background-color: #e64022;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/*----------------------------*/
+/*Cars dealer */
+/*---------------------------*/
+
+
+.boxes {
+    margin-left: 20px;
+    font-weight: 250;
+font-size: 16px;
+}
+.tight {
+    margin-top: 20px;
+    margin-bottom: -10px;
+    font-size: 18px;
+    border-bottom: 2px solid #e64022;
+}
+.rock {
+     margin-top: 20px;
+    margin-bottom: -10px;
+    font-size: 18px;
+    border: 2px solid #e64022;
+    width: 50%;
+    padding-left: 10px;
+    background-color: #e64022;
+}
+.rock:hover {
+    background-color: #fff;
+}
+.lots {
+    background-image: url(images/MOBILE%20HOUSE%20BRANDING-min.jpg);
+     height: 180vh; 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*----------------------------
+CONTACT FORM
+---------------------------*/
+
+/*----------------------------
+SLIDESHOW
+---------------------------*/
+.mySlides {display: none;}
+.mySlides img {
+     width: 50%;
+      margin-left: 28%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*----------------------------
+SCREEN SLIDER
+---------------------------*/
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 55vw;
+    overflow: hidden;
+}
+
+.layer {
+    position: absolute;
+    width: 100vw;
+    min-height: 55vw;
+    overflow: hidden;
+}
+
+.layer .content-wrap {
+    position: absolute;
+    width: 100vw;
+    min-height: 55vw;
+}
+
+.layer .content-body {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #e64022;
+}
+
+.layer img {
+    position: absolute;
+    width: 35%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.layer h1 {
+    font-size: 2em;
+}
+
+.bottom {
+    background: #222;
+    z-index: 1;
+}
+
+.bottom .content-body {
+    right: 5%;
+}
+
+.bottom h1 {
+    color: #fdab00;
+}
+
+.top {
+    background: #fff;
+    color: #222;
+    z-index: 2;
+    width: 50vw;
+}
+
+.top .content-body {
+    left: 5%;
+    color: #222;
+}
+
+.handle {
+    position: absolute;
+    height: 100%;
+    display: block;
+    background-color: #fdab00;
+    width: 8px;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+}
+
+.skewed .handle {
+    top: 50%;
+    -webkit-transform: rotate(30deg) translateY(-50%);
+    transform: rotate(30deg) translateY(-50%);
+    height: 200%;
+    -webkit-transform-origin: top;
+    transform-origin: top;
+}
+
+.skewed .top {
+    -webkit-transform: skew(-30deg);
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+}
+
+.skewed .top .content-wrap {
+    -webkit-transform: skew(30deg);
+    transform: skew(30deg);
+    margin-left: 1000px;
+}
+
+
+/*----------------------------
+FOOTER
+---------------------------*/
+footer {
+   background-color: #333;
+    padding: 50px;
+}
+.footernav {
+    list-style: none;
+    float: left;
+    font-size: 80%;
+}
+.socialinks {
+    list-style: none;
+    float: right;
+}
+.footernav li,
+.socialinks li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.footernav li:last-child,
+.socialinks li:last-child {
+margin-right: 0;
+}
+
+.footernav li a:link,
+.footernav li a:visited,
+.socialinks li a:link,
+.socialinks li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #e64022;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+.footernav li a:hover,
+.footernav li a:active {
+    color: #ddd;
+}
+
+.socialinks li a:link,
+.socialinks li a:visited {
+    font-size: 160%;
+}
+.ion-logo-facebook,
+.ion-logo-twitter,
+.ion-logo-googleplus,
+.ion-logo-instagram {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.ion-logo-facebook:hover {
+    color: #3b5998;
+}
+.ion-logo-twitter:hover {
+    color: #00aced;
+}
+.ion-logo-googleplus:hover {
+    color: #dd4b39;
+}
+.ion-logo-instagram:hover {
+    color: #517fa4;
+}
+footer p {
+    color: #e64022;
+    text-align: center;
+    margin-top: 20px;
+}
+.sitedesigner {
+    font-size: 30%;
+}
+ 

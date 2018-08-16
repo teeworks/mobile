@@ -1,0 +1,86 @@
+/*----------------------------
+BIG TABLETS 1024-1200PX
+---------------------------*/
+
+@media only screen and (max-width:1200px){
+.hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+}
+    .row { padding: 0 2%; }
+
+
+section {
+    margin-top: 15px;
+}
+.lots {
+     height: 190vh; 
+}
+    .rock {
+    width: 60%;
+    padding-left: 5px;
+}
+}
+
+/*----------------------------
+SMALL TABLETS- BIG TABLETS 768-1023PX
+---------------------------*/
+
+@media only screen and (max-width:1023px){
+    body { font-size: 18px;}
+    section { padding: 60px 0; }
+
+   
+    .contact-form { width: 90%; }
+  .flood {
+    margin-left: 300px;
+}
+   .rock {
+    width: 80%;
+    padding-left: 5px;
+}
+}
+
+
+
+/*----------------------------
+SMALL PHONES- TABLETS 481-767PX
+---------------------------*/
+
+@media only screen and (max-width:767px) {
+    body { font-size: 16px; }
+    section { padding: 30px 0; }
+    
+    .row { padding: 0 4%; }
+    
+    .col { width: 100%; 
+    margin: 0 0 4% 0;
+    }
+    
+    
+    .h1 { font-size: 180%;}
+    .h2 { font-size: 150%;}
+    
+.lots {
+     height: 260vh; 
+}
+    .rock {
+    width: 120%;
+    padding-left: 0px;
+}
+
+}
+
+
+
+/*----------------------------
+SMALL PHONES 0-480PX
+---------------------------*/
+
+@media only screen and (max-width:480px){
+    section { padding: 25px 0; }
+    .lots {
+     height: 430vh; 
+}
+   
+}
